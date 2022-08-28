@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+ 
+    
+<style>
+      
+
+ 
+</style>
+   
+  
+  <body>
+<div class="container" style="margin-top: 200px;">
+    
+    <center> 
+  <h1 class="hi">Admin Login</h1>
+
+    
+  </h1>  
+        
+    
+ <h2 class="hii">Login  to your dashboard</h2>
+    
+ </h2>
+ 
+ <form>
+    
+ <br>
+   <label for="uname" > username  </label>
+   <input type="text" name="username" placeholder="Enter username" style="margin-bottom: 20px; text-align: center;" required  > 
+ </br>
+  <label for="pass"> password</label>
+ <input type="password" name="password" placeholder="Enter password" style="margin-bottom:20px ;text-align: center;" required> 
+</br>
+
+<input type="checkbox" style="position:relative;right: 60px; ;bottom: -40px;" > <p style="margin-bottom: -50px ;"> remember me </p> 
+ 
+<button class="loginbutton"style="position:relative;bottom: -60px;" onclick="myfunc(this.form)"> Login</button> 
+ 
+ 
+
+   
+ </form>
+
+ 
+    
+</center> 
+ 
+
+</div>
+<script language="JavaScript">
+ 
+  function myfunc(form)
+    {
+
+    if (form.username.value == "admin" && form.password.value == "admin") {
+        
+        alert("You have successfully logged in.");
+        window.open("anotherpage.html");
+    } else {
+        
+       alert("Invalid Username & Password");
+
+    }
+  }
+</script>
+
+  </body>
+
+</html>
